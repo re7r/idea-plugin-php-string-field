@@ -1,0 +1,38 @@
+<idea-plugin>
+    <id>com.github.re7r.phpStringField</id>
+    <name>PHP String Field</name>
+    <category>Code tools</category>
+    <vendor url="https://github.com/re7r">Re7r</vendor>
+    <description><![CDATA[
+        <p><b>PHP String Field</b> is a PhpStorm plugin that adds navigation and reference support for string parameters,
+        Including nested fields accessed via dot notation (<code>'user.profile.email'</code>).</p>
+
+        <h3>Features</h3>
+        Navigation, reference, and find usages support.
+
+        <h3>Usage</h3>
+        <ul>
+          <li>Add the <b><code>@string-field</code></b> to a <code>@param</code> phpdoc tag, to enable navigation through string paths.<br><br></li>
+          <li>Use the <b><code>@string-field:call</code></b> to interpret the <b>last field to be treated as a callable method</b> if it exists in the referenced path.</li>
+        </ul>
+
+        <p>Now you can navigate from <code>'profile.avatar.url'</code> directly to the corresponding property in the class.</p>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.jetbrains.php</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <annotator language="PHP" implementationClass="com.github.re7r.phpStringField.annotators.ParameterAnnotator" />
+        <psi.referenceContributor language="PHP" implementation="com.github.re7r.phpStringField.contributors.PathReferenceContributor"/>
+    </extensions>
+
+    <change-notes>
+        <![CDATA[
+            <b>[1.0.0] - 2025-11-04</b><br><br>
+            <i>Added</i><br>
+            - Navigation, reference, and find usages support.
+        ]]>
+    </change-notes>
+</idea-plugin>
