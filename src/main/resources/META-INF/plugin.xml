@@ -29,9 +29,9 @@
 
     <change-notes>
         <![CDATA[
-            <b>[1.0.0] - 2025-11-04</b><br><br>
+            <b>[1.1.0] - 2025-11-06</b><br><br>
             <i>Added</i><br>
-            - Navigation, reference, and find usages support.
+            - Supports string-field parameters for class-string static calls.
         ]]>
     </change-notes>
 </idea-plugin>
