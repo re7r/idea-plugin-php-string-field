@@ -4,16 +4,15 @@
     <category>Code tools</category>
     <vendor url="https://github.com/re7r">Re7r</vendor>
     <description><![CDATA[
-        <p><b>PHP String Field</b> is a PhpStorm plugin that adds navigation and reference support for string parameters,
-        Including nested fields accessed via dot notation (<code>'user.profile.email'</code>).</p>
-
-        <h3>Features</h3>
-        Navigation, reference, and find usages support.
+        <p><b>PHP String Field</b> adds navigation and references support for string parameters of property names.
+        Including nested fields accessed via dot notation (<code>'profile.avatar.url'</code>).</p>
+        Features: <b>Navigation</b>, <b>reference</b> and <b>find usages support</b>.
 
         <h3>Usage</h3>
+
         <ul>
-          <li>Add the <b><code>@string-field</code></b> to a <code>@param</code> phpdoc tag, to enable navigation through string paths.<br><br></li>
-          <li>Use the <b><code>@string-field:call</code></b> to interpret the <b>last field to be treated as a callable method</b> if it exists in the referenced path.</li>
+          <li>Add the <b><code>@string-field</code></b> to a <code>@param</code> phpdoc tag, to enable navigation through string path.<br><br></li>
+          <li>Use the <b><code>@string-field:call</code></b> to interpret the <b>last field to be treated as a callable method</b>.</li>
         </ul>
 
         <p>Now you can navigate from <code>'profile.avatar.url'</code> directly to the corresponding property in the class.</p>

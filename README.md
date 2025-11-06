@@ -1,7 +1,7 @@
 # PHP String Field
 
-<p><strong>PHP StringField</strong> is a PhpStorm plugin that adds navigation and reference support for string parameters.<br>
-Including nested fields accessed via dot notation (<code>'user.profile.email'</code>).</p>
+<p><strong>PHP StringField</strong> is a PhpStorm plugin that adds navigation and references support for string parameters of property names.<br>
+Including nested fields accessed via dot notation (<code>'profile.avatar.url'</code>).</p>
 
 ## Features
 
@@ -9,19 +9,17 @@ Including nested fields accessed via dot notation (<code>'user.profile.email'</c
 
 ## Usage
 
-- Add the `@string-field` to a `@param` phpdoc tag, to enable navigation through string paths.
-- Use the `@string-field:call` to interpret the  **last field to be treated as a callable method** if it exists in the
-  referenced path.
+- Add the `@string-field` to a `@param` phpdoc tag, to enable navigation through string path.
+- Use the `@string-field:call` to interpret the  **last field to be treated as a callable method**.
 
 ## Example
 
 ```php
 class User {
-     public Email $email;
      public Profile $profile;
 
     /**
-     * @param string $path @string-field:call
+     * @param string $path @string-field
      */
     public function field(string $path) {
         // ...
@@ -29,7 +27,7 @@ class User {
 }
 
 $user = new User();
-$user->field('profile.avatar.getUrl');
+$user->field('profile.avatar.url');
 ```
 
-Now you can navigate from `'profile.avatar.getUrl'` directly to the corresponding property or method in the class.
+Now you can navigate from `'profile.avatar.url'` directly to the corresponding property or method in the class.
