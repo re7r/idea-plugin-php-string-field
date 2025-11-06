@@ -47,11 +47,6 @@ class ParameterAnnotator : Annotator, DumbAware {
                 element.removeUserData(IS_CALLABLE)
                 return null
             }
-
-
-            private fun isPathParam(element: Parameter): Boolean {
-                return element.docTag?.text?.contains("@string-field") == true
-            }
         }
     }
 
