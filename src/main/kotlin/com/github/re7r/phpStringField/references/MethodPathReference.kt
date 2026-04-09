@@ -1,4 +1,4 @@
-package com.github.re7r.phpNavigator.references
+package com.github.re7r.phpStringField.references
 
 import com.intellij.codeInsight.lookup.LookupElementBuilder
 import com.intellij.openapi.util.TextRange

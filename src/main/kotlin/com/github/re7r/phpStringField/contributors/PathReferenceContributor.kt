@@ -1,6 +1,6 @@
 package com.github.re7r.phpStringField.contributors
 
-import com.github.re7r.phpNavigator.references.MethodPathReference
+import com.github.re7r.phpStringField.references.MethodPathReference
 import com.github.re7r.phpStringField.annotators.ParameterAnnotator
 import com.github.re7r.phpStringField.references.PropertyPathReference
 import com.intellij.openapi.project.Project

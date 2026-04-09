@@ -29,9 +29,8 @@
 
     <change-notes>
         <![CDATA[
-            <b>[1.1.0] - 2025-11-06</b><br><br>
-            <i>Added</i><br>
-            - Supports string-field parameters for class-string static calls.
+            <b>[1.1.1] - 2026-04-10</b><br><br>
+            Bump IDE compatibility to 2027.2
         ]]>
     </change-notes>
 </idea-plugin>
